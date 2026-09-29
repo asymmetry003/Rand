@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Asymmetry.portfolio</title>
+    
+</head>
+<body>
+<div class="fp-bg" aria-hidden="true">
+    <div class="fp-orb-a"></div>
+    <div class="fp-orb-b"></div>
+    <div class="fp-grid-wrap">
+        <div class="fp-grid-pattern"></div>
+        <div class="fp-spotlight" id="fpSpotlight"></div>
+    </div>
+</div>
+
+<header>
+    <div class="logo">Asymmetry<span class="acent">.portfolio</span></div>
+    <div class="header-other">
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+            <span class="material-symbols-rounded icon-moon">dark_mode</span>
+            <span class="material-symbols-rounded icon-sun">light_mode</span>
+        </button>
+        <a href="#contact" class="cta contact">Contact</a>
+    </div>
+</header>
+
+<main>
+    <!-- HERO -->
+    <div class="herolive">6 active Projects right now</div>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>I am Bamidele Solomon Olamide<br><span class="asymmetry">Asymmetry</span></h1>
+            <p>I craft beautiful, high-performance web applications with modern technologies. Passionate about clean code, great UX, and solving real-world problems.</p>
+            <div class="cta-row">
+                <input type="text" placeholder="Enter your message..." id="heroMessage">
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Start collaboration</button>
+            </div>
+            <p class="reply-text">Reply within few hours • Trusted and reliable <span onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Or explore services</span></p>
+            <div class="snap-achievement">
+                <span><span class="snap-achievement-icon material-symbols-rounded">biotech</span>5 years of experience</span>
+                <span><span class="snap-achievement-icon material-symbols-rounded">public</span>1000+ completed projects</span>
+                <span><span class="snap-achievement-icon material-symbols-rounded">star_shine</span>Great designs</span>
+            </div>
+        </div>
+        <img src="heroimg.jpg" class="hero-img" alt="Bamidele Solomon Olamide">
+    </div>
+
+    <div class="hero-achievement">
+        <div><p>Client</p><p>248</p><p>Satisfied clients</p></div>
+        <div><p>Skills</p><p>7+</p><p>Programming languages</p></div>
+        <div><p>Crews</p><p>3+</p><p>Team members</p></div>
+        <div><p>Live</p><p>1.5k</p><p>Published projects</p></div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="section-header">
+            <h2><span class="num">01.</span> About Me</h2>
+            <p>Dedicated web developer focused on turning ideas into fast, responsive digital products.</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Hi, I’m <span class="highlight">Bamidele Solomon Olamide</span> (Asymmetry) — a dedicated and passionate web developer with a strong interest in creating modern, responsive and functional websites.</p>
+                <p>I turn ideas into digital solutions using the latest technologies and best practices in web development. From clean UI to solid backend logic, I care about every detail that makes a product feel polished and reliable.</p>
+                <p>Your vision + my code = a great website. Let’s build something great together.</p>
+            </div>
+            <div class="about-card">
+                <h3>What I deliver</h3>
+                <ul>
+                    <li><span class="material-symbols-rounded">bolt</span> Fast, responsive & user-friendly sites</li>
+                    <li><span class="material-symbols-rounded">devices</span> Works on mobile, tablet & desktop</li>
+                    <li><span class="material-symbols-rounded">search</span> SEO-friendly structure that helps ranking</li>
+                    <li><span class="material-symbols-rounded">schedule</span> On-time delivery & reliable support</li>
+                    <li><span class="material-symbols-rounded">payments</span> Affordable & flexible pricing</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="section-header">
+            <h2><span class="num">02.</span> Tech Skills</h2>
+            <p>Core tools and technologies I use to build, design, develop and deploy.</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="icon">HTML</div>
+                <div class="name">HTML</div>
+                <div class="label">Structure</div>
+            </div>
+            <div class="skill-card">
+                <div class="icon">CSS</div>
+                <div class="name">CSS</div>
+                <div class="label">Styling</div>
+            </div>
+            <div class="skill-card">
+                <div class="icon">JS</div>
+                <div class="name">JavaScript</div>
+                <div class="label">Interactivity</div>
+            </div>
+            <div class="skill-card">
+                <div class="icon">⚛</div>
+                <div class="name">React</div>
+                <div class="label">Modern UI</div>
+            </div>
+            <div class="skill-card">
+                <div class="icon">PHP</div>
+                <div class="name">PHP</div>
+                <div class="label">Backend</div>
+            </div>
+            <div class="skill-card">
+                <div class="icon">SQL</div>
+                <div class="name">MySQL</div>
+                <div class="label">Database</div>
+            </div>
+            <div class="skill-card">
+                <div class="icon">Git</div>
+                <div class="name">Git & GitHub</div>
+                <div class="label">Version Control</div>
+            </div>
+            <div class="skill-card">
+                <div class="icon">WP</div>
+                <div class="name">WordPress</div>
+                <div class="label">CMS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="section-header">
+            <h2><span class="num">03.</span> Services I Offer</h2>
+            <p>All types of websites — build, design, develop & deploy.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon-wrap"><span class="material-symbols-rounded">business</span></div>
+                <h3>Business Websites</h3>
+                <p>Company & corporate sites that look professional and convert visitors.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrap"><span class="material-symbols-rounded">home</span></div>
+                <h3>Real Estate Websites</h3>
+                <p>Property listings, rentals and agent portfolios with clean UX.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrap"><span class="material-symbols-rounded">shopping_cart</span></div>
+                <h3>E-commerce Websites</h3>
+                <p>Online stores with product pages, carts and smooth checkout flows.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrap"><span class="material-symbols-rounded">health_and_safety</span></div>
+                <h3>Healthcare Websites</h3>
+                <p>Hospitals, clinics and medical practices — clear and trustworthy design.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrap"><span class="material-symbols-rounded">person</span></div>
+                <h3>Personal Websites</h3>
+                <p>Portfolio & lifestyle sites that showcase your work or brand.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrap"><span class="material-symbols-rounded">restaurant</span></div>
+                <h3>Restaurant & Food</h3>
+                <p>Menus, reservations and brand presence for food & hospitality.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrap"><span class="material-symbols-rounded">school</span></div>
+                <h3>Educational Websites</h3>
+                <p>Schools, courses and e-learning platforms with clear structure.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrap"><span class="material-symbols-rounded">volunteer_activism</span></div>
+                <h3>Non-Profit Websites</h3>
+                <p>Charity & NGO sites focused on mission, donations and impact.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrap"><span class="material-symbols-rounded">newspaper</span></div>
+                <h3>News & Magazine</h3>
+                <p>Media, blogs and publication sites with fast content delivery.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrap"><span class="material-symbols-rounded">rocket_launch</span></div>
+                <h3>Landing Pages</h3>
+                <p>High-converting pages for products, services and campaigns.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-wrap"><span class="material-symbols-rounded">code</span></div>
+                <h3>Custom Websites</h3>
+                <p>Any idea, any type — tailored solutions from scratch.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY ME -->
+    <section id="why">
+        <div class="section-header">
+            <h2><span class="num">04.</span> Why Choose Me?</h2>
+            <p>Your success is my priority.</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="check"><span class="material-symbols-rounded">check</span></div>
+                <div>
+                    <h4>Clean, modern & professional design</h4>
+                    <p>Interfaces that look sharp and feel intentional.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="check"><span class="material-symbols-rounded">check</span></div>
+                <div>
+                    <h4>Responsive on all devices</h4>
+                    <p>Mobile, tablet and desktop — consistent experience.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="check"><span class="material-symbols-rounded">check</span></div>
+                <div>
+                    <h4>Fast loading & optimized</h4>
+                    <p>Performance-focused so users stay and convert.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="check"><span class="material-symbols-rounded">check</span></div>
+                <div>
+                    <h4>SEO friendly</h4>
+                    <p>Structure and practices that help you rank better.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="check"><span class="material-symbols-rounded">check</span></div>
+                <div>
+                    <h4>Affordable & flexible pricing</h4>
+                    <p>Clear rates that fit different project sizes.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <div class="check"><span class="material-symbols-rounded">check</span></div>
+                <div>
+                    <h4>On-time delivery & support</h4>
+                    <p>Reliable timelines and after-sales help when you need it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-wrap">
+            <div class="contact-info">
+                <h2>Let’s build something great</h2>
+                <p>Tell me about your project. I usually reply within a few hours.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="icon"><span class="material-symbols-rounded">call</span></div>
+                        <div>
+                            <div class="label">Phone / WhatsApp</div>
+                            <div class="value"><a href="tel:+2349042005304">0904 200 5304</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><span class="material-symbols-rounded">mail</span></div>
+                        <div>
+                            <div class="label">Email</div>
+                            <div class="value"><a href="mailto:bamideles907@gmail.com">bamideles907@gmail.com</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><span class="material-symbols-rounded">location_on</span></div>
+                        <div>
+                            <div class="label">Location</div>
+                            <div class="value">Lagos, Nigeria · Available for remote work</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! I’ll get back to you soon.'); this.reset();">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="logo">Asymmetry<span class="acent">.portfolio</span></div>
+    <p>Modern web solutions for a digital future · <a href="#contact">Get in touch</a></p>
+    <p style="margin-top:8px;opacity:.7">© 2026 Bamidele Solomon Olamide. All rights reserved.</p>
+</footer>
+
+<!-- Floating CTA — appears after scrolling past ..reply-text -->
+<div class="float-cta" id="floatCta" role="complementary" aria-label="Start chatting">
+    <a href="#contact" class="float-btn" id="floatCtaBtn">
+        Start chatting <span class="arrow">→</span>
+    </a>
+    <button type="button" class="float-close" id="floatCtaClose" aria-label="Dismiss">
+        <span class="material-symbols-rounded" style="font-size:16px">close</span>
+    </button>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
